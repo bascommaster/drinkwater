@@ -307,16 +307,74 @@ template {
 [hidden] {
   display: none; }
 
+.container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(55, 102, 173, 0.787);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.3rem;
+  min-height: 100vh;
+  padding: 1rem;
+  width: 100%; }
+  .container__title {
+    font-size: 2rem; }
+  .container__glass {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .container__add-glass {
+    color: #bff5f7;
+    background-color: #3767AD;
+    border: 1px solid white;
+    border-radius: 50px;
+    height: 3rem;
+    margin-top: 2rem;
+    width: 13rem; }
+  .container__del-glass {
+    background: none;
+    border: none;
+    color: #bff5f7;
+    margin-top: 2rem; }
+
+.glass {
+  padding: 1rem;
+  position: relative; }
+  .glass__counter {
+    color: #171718;
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0;
+    position: absolute;
+    top: calc(50% - 2rem); }
+
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  font-size: 16px; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: #bff5f7;
+  background-image: url("../assets/img/water1.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  font-family: 'Roboto', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
