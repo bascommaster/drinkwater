@@ -23,25 +23,34 @@ const spanCounter = document.querySelector('.glass__counter--js');
 const addButton = document.querySelector('.container__add-glass--js');
 const delButton = document.querySelector('.container__del-glass--js');
 
+let counter=0;
 
-let counter = localStorage.getItem('glassNumber');
-spanCounter.innerHTML = localStorage.getItem('glassNumber');
+const date = new Date().toISOString().slice(0,10);
+// console.log(date);
+
+if(!localStorage.getItem(date)){
+  localStorage.setItem(date, 0);
+}else{
+  counter = localStorage.getItem(date);
+  spanCounter.innerHTML = localStorage.getItem(date);
+}
+
+
 
 addButton.addEventListener('click', () => {
-  // spanCounter.innerHTML = parseInt(spanCounter.innerHTML)+1; // you can do something like this
   counter++;
-  localStorage.setItem('glassNumber', counter);
-  // spanCounter.innerHTML = counter;
-  spanCounter.innerHTML = localStorage.getItem('glassNumber');
+  localStorage.setItem(date, counter);
+  spanCounter.innerHTML = localStorage.getItem(date);
 });
+
 
 delButton.addEventListener('click', () => {
   if (counter <= 0) {
     counter = 0;
   } else {
     counter--;
-    localStorage.setItem('glassNumber', counter);
-    spanCounter.innerHTML = localStorage.getItem('glassNumber');
+    localStorage.setItem(date, counter);
+    spanCounter.innerHTML = localStorage.getItem(date);
   }
   spanCounter.innerHTML = counter;
 });
