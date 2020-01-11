@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Site title</title>
+    <meta name="description" content="Description" />
+
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/pwa/icons/icon-192x192.png"
+    />
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+
+
+  </head>
+
+  <body>
+    
+    <main class="container">
+      <h1 class="container__title">Drink a glass of water</h1>
+      <section class="container__glass glass">
+        <span class="glass__counter glass__counter--js">0</span>
+        <img class="glass__img" src="assets/img/water-glass.svg" alt="glass og blue water">
+      </section>
+      <button class="container__add-glass container__add-glass--js">add glass</button>
+      <button class="container__del-glass container__del-glass--js">delete glass</button>
+    </main>
+    
+      
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
