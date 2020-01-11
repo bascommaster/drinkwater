@@ -1,5 +1,4 @@
-# 
-Drinkwater - simple PWA project
+# Drinkwater - simple PWA project
 
 Really simple progresive web application counts glasses of watter you have drank. This project was created to learn frontend technologies as html5, css3 and javascript.
 
