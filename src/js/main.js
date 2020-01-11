@@ -23,14 +23,14 @@ const spanCounter = document.querySelector('.glass__counter--js');
 const addButton = document.querySelector('.container__add-glass--js');
 const delButton = document.querySelector('.container__del-glass--js');
 
-let counter=0;
+let counter = 0;
 
-const date = new Date().toISOString().slice(0,10);
+const date = new Date().toISOString().slice(0, 10);
 // console.log(date);
 
-if(!localStorage.getItem(date)){
+if (!localStorage.getItem(date)) {
   localStorage.setItem(date, 0);
-}else{
+} else {
   counter = localStorage.getItem(date);
   spanCounter.innerHTML = localStorage.getItem(date);
 }
